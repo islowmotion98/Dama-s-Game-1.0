@@ -149,7 +149,7 @@ function verificarClick(a,b){
         possiveisLances(a,b);
         return;
     }
-    if (obrigatorio == true || bloquear == true && document.getElementById('t'+a+b).style.backgroundColor == 'rgb(178, 34, 34)'){
+    if (( obrigatorio == true && document.getElementById('t'+a+b).style.backgroundColor == 'rgb(178, 34, 34)' )|| (bloquear == true && document.getElementById('t'+a+b).style.backgroundColor == 'rgb(178, 34, 34)')){
         capturarPecinha(a,b)
     }
 
